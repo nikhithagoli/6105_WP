@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comments form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<script src="index.js"></script>
+	<div class="container jumbotron">
+		<div class="row">
+  		<h2>Comments Form</h2>
+  		<form id="frm">
+    	<div class="form-group">
+      		<label >Name:</label>
+      		<input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    	</div>
+    	<div class="form-group">
+      		<label >Comment:</label>
+      		<textarea name="comment" id="comment" class="form-control" placeholder="Enter your comments" cols="10" rows="6"></textarea>
+    	</div>
+    	<div class="form-group">
+      		<label for="pwd">Secret Key:</label>
+      		<input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+    	</div>
+    	<button type="button" class = "btn btn-primary" onclick="myFunction(form)">submit</button>
+    	<br><br>
+  		</form>
+  		</div>
+  		<div class= "row">
+  			<label> Comments List:</label><br>
+  			<!-- <textarea disabled rows="5" cols="160" id="comments_list"></textarea> -->
+  			<!-- <p id ="comments_list" style="border: 1px solid green">
+  				<h1 id="dis_com"></h1>
+  				<p id="dis_name"></p>
+  			</p> -->
+  			<div style="border: 1px solid green">
+  				<h3 id="dis_com"></h3>
+  				<p id="dis_name"></p>
+  			</div>
+  		</div>
+
+	</div>
+</body>
+</html>
